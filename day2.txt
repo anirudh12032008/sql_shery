@@ -1,0 +1,29 @@
+mysql> create database lab;
+Query OK, 1 row affected (0.10 sec)
+
+mysql> use lab
+Database changed
+mysql> create table users(id int, fname varchar(5),lname varchar(55),un varchar(46),foler int, fling int);
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> desc users;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | YES  |     | NULL    |       |
+| fname | varchar(5)  | YES  |     | NULL    |       |
+| lname | varchar(55) | YES  |     | NULL    |       |
+| un    | varchar(46) | YES  |     | NULL    |       |
+| foler | int         | YES  |     | NULL    |       |
+| fling | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+6 rows in set (0.08 sec)
+
+mysql> drop table users;
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> drop database lab;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql>
+
