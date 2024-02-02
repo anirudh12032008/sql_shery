@@ -1,0 +1,9 @@
+use hr;
+select * from employees where salary > 8000;
+select * from departments;
+select * from employees where department_id = 8;
+select * from employees where salary * 1.25 >= 10000;
+use cm;
+select * from customers where country = 'France' || country = 'USA' || country = 'Spain';
+select * from customers where (country = 'France' || country = 'USA' || country = 'Spain') && creditLimit >80000;
+select * from customers where country != 'France' && country != 'USA' && country != 'Spain';
