@@ -1,0 +1,7 @@
+use hr;
+select concat_ws(' ',e.first_name,e.last_name, 'whose Employee ID is',e.employee_id,'works in',d.department_name,'department') as result from employees e join departments d using(department_id);
+select d.department_id, l.city from departments d join locations l using(location_id);
+select e.employee_id,e.first_name,j.job_title,(j.max_salary-j.min_salary) as salary_diff from employees e join jobs j using(job_id);
+select count(e.employee_id) as uUmber_of_emp,j.job_title from employees e join jobs j using(job_id) group by job_id;
+use cm;
+select c.customerName, count(o.ordernumber) as orders from customers c join orders o using(customernumber) group by customernumber;
